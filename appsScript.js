@@ -14,15 +14,15 @@ const SYSTEM_PROMPT = (
 );
 
 function onOpen() {
-  SpreadsheetApp.getUi().createMenu("AIccountant")
-      .addItem("Bookkeeping", "handleThat")
+  SpreadsheetApp.getUi().createMenu("ChatCPA")
+      .addItem("Ask me", "handleThat")
       .addToUi();
 }
 
 function handleThat() {
   const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
   var ui = SpreadsheetApp.getUi();
-  const prompt = ui.prompt('Bookkeeping', 'Send a message...', ui.ButtonSet.YES_NO).getResponseText();
+  const prompt = ui.prompt('Ask me', 'Send a message...', ui.ButtonSet.YES_NO).getResponseText();
   const temperature = 0.7;
 
 
