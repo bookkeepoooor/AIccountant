@@ -1,4 +1,4 @@
-# AIccountant
+# ChatCPA
 
 An AI-powered Google Sheet plugin for effortless accounting and financial analysis.
 
